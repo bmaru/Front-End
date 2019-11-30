@@ -1,0 +1,44 @@
+<!-- 03. Em relação às propriedades de fonte, criar um id para cada uma das regras CSS abaixo:
+    A. Tipo de letra Arial e cor vermelha 
+    B. Tipo de letra Times, com tamanho 22 e na cor verde 
+    C. Tipo de letra Comic Sans Serif, com tamanho 20, na cor azul e estilo itálico 
+    D. Formatar a fonte de uma página na cor amarela, em negrito, de tamanho 14, com espessura média e tipo de letra Verdana.
+Ao final crie uma página HTML com vários elementos para testar cada uma das regras acima. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 3</title>
+    <style>
+        p[class=estilo] {
+            font-family: 'Arial';
+            color: red;
+        }
+        p[class=estilo2] {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            color: green;
+        }
+        p[class=estilo3] {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            color: blue;
+            font-style: italic;
+        }
+        p {
+            color: yellow;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p class="estilo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ullamcorper nisi, ut tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec elementum nisl odio, ut accumsan nisl volutpat a. Phasellus interdum porttitor suscipit. Pellentesque et bibendum tortor. Vivamus in dolor non purus pretium porttitor. Praesent justo enim, luctus eget tristique sit amet, euismod ac dui.</p>
+    <p class="estilo2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ullamcorper nisi, ut tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec elementum nisl odio, ut accumsan nisl volutpat a. Phasellus interdum porttitor suscipit. Pellentesque et bibendum tortor. Vivamus in dolor non purus pretium porttitor. Praesent justo enim, luctus eget tristique sit amet, euismod ac dui.</p>
+    <p class="estilo3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ullamcorper nisi, ut tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec elementum nisl odio, ut accumsan nisl volutpat a. Phasellus interdum porttitor suscipit. Pellentesque et bibendum tortor. Vivamus in dolor non purus pretium porttitor. Praesent justo enim, luctus eget tristique sit amet, euismod ac dui.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ullamcorper nisi, ut tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec elementum nisl odio, ut accumsan nisl volutpat a. Phasellus interdum porttitor suscipit. Pellentesque et bibendum tortor. Vivamus in dolor non purus pretium porttitor. Praesent justo enim, luctus eget tristique sit amet, euismod ac dui.</p>
+</body>
+</html>

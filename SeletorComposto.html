@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Composto</title>
+    <style> 
+        .container p {
+            background-color: blue;
+        }
+        .container2 > p {
+            background-color: green;
+        }
+        .container3 p + h2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Parágragrafo filho direto</p>
+        <div>
+            <p>Parágragrafo filho indireto também será atingido pelo alvo</p>
+        </div>
+    </div>
+    <div class="container2">
+        <p>Parágragrafo filho direto</p>
+        <div>
+            <p>Parágragrafo filho indireto não será atingido pelo alvo</p>
+        </div>
+    </div>
+    <div class="container3">
+        <p>Parágrafo filho direto</p>
+        <h2>Titulo atingido</h2>
+        <div>
+            <p>Parágrafo filho indireto não será atingido</p>
+        </div>
+        <h2>Este título não será atingido</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Atributo</title>
+    <style>
+        p {
+            font-size: 30px;
+            cursor: pointer;
+        }
+        #meuNome {
+            color: green;
+        }
+        .name {
+            color: red;
+        }
+        p:hover {
+            background-color: silver;
+        }
+        #meuNome:hover {
+            color: silver;
+            background-color: green;
+        }
+        .name:hover {
+            color: silver;
+            background-color: red;
+        }
+        #firstLine::first-line {
+            color: red;
+        }
+        #firstLine::first-letter {
+            font-size: 60px;
+        }
+        * {
+            color: blue;
+        }
+        input[value='0'], input[value='10'] {
+            color: red;
+            font-size: 18px;
+        } 
+    </style>
+</head>
+<body>
+    <p>Bianca Russo</p>
+    <p class="name">Bianca Russo</p>
+    <p id="meuNome">Bianca Russo</p>
+    <p id="firstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor, mauris non tincidunt imperdiet, massa nulla aliquet ante, in maximus arcu purus finibus lorem. Fusce imperdiet vel urna eu dictum. Quisque vulputate libero id sagittis faucibus. Aenean mollis lectus eu tempor malesuada. Morbi porttitor massa sodales enim tincidunt, sit amet accumsan risus elementum. Donec varius quam nec nibh tristique, vehicula venenatis nisi dictum. Donec lacinia ligula a arcu condimentum semper. Mauris eget sapien magna. Integer pharetra venenatis mauris sit amet suscipit. Sed eleifend vehicula sollicitudin.</p>
+    <form>
+        <input type="text" value="0">
+        <input type="text" value="10">
+    </form>
+</body>
+</html>

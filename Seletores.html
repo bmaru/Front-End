@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        p[title]{
+            background-color: red;
+        }
+        input[type=text]{
+            background-color: blue;
+        }
+        p[class~=colorido]{
+            background-color: blue;
+        }
+        p[class|=colorido]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p title="impar">meu parágrafo</p>
+    <input type="text">
+    <p class="impar colorido">meu parágrafo</p>
+    <p class="colorido-on">meu parágrafo</p>
+</body>
+</html>

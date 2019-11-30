@@ -1,0 +1,14 @@
+@import url('EstiloImportado.css');
+h1 {
+    color: green;
+    margin: 40px 20px 0px 90px;
+    border: dotted 20px blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rosybrown;
+    border-radius: 50%;
+    box-shadow: 10px -10px 30px 1px #c3c3c3;
+}

@@ -1,0 +1,55 @@
+<!-- 05. Criar uma regra CSS para formatação de parágrafos utilizando as seguintes configurações:
+    A.Borda Esquerda: Espessura de 2px, na cor verde e estilo solid.  
+    B.Borda Direita: Espessura de 2px, na cor vermelha e estilo solid.  
+    C.Largura: 60%  
+    D.Altura: 400px; 
+    E.Tamanho da fonte: 12px;  
+    F.Espaçamento entre letras: 3px;  
+    G.Altura dos blocos: 30px;  
+    H.Alinhamento do texto: justificado  
+    I.Tipo de fonte Verdana  Endentação do texto: 25px; 
+Por fim adicione aos pseudo-elementos :firstletter e :firstline, as seguintes configurações:
+    A.:firstletter  
+        a.Tamanho da Fonte: 36px  
+        b.Cor da fonte: azul 
+        c.Decoração do texto: overline
+    B.:firstline  
+        a.Decoração do texto: underline   
+        b.Capitalização do texto: todos os caracteres em caixa alta -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 5</title>
+    <style>
+    p{
+        border-left: solid 2px green;
+        border-right: solid 2px red;
+        width: 60%;
+        height: 400px;
+        font-size: 12px;
+        letter-spacing: 3px;
+        line-height: 30px;
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-indent: 25px;
+    }
+    #firstLetter::first-letter {
+        font-size: 36px;
+        color: blue;
+        text-decoration: overline;
+    }
+    #firstLine::first-line {
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ullamcorper nisi, ut tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec elementum nisl odio, ut accumsan nisl volutpat a. Phasellus interdum porttitor suscipit. Pellentesque et bibendum tortor. Vivamus in dolor non purus pretium porttitor. Praesent justo enim, luctus eget tristique sit amet, euismod ac dui.</p>
+    <p id="firstLetter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ullamcorper nisi, ut tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec elementum nisl odio, ut accumsan nisl volutpat a. Phasellus interdum porttitor suscipit. Pellentesque et bibendum tortor. Vivamus in dolor non purus pretium porttitor. Praesent justo enim, luctus eget tristique sit amet, euismod ac dui.</p>
+    <p id="firstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel ullamcorper nisi, ut tempus tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec elementum nisl odio, ut accumsan nisl volutpat a. Phasellus interdum porttitor suscipit. Pellentesque et bibendum tortor. Vivamus in dolor non purus pretium porttitor. Praesent justo enim, luctus eget tristique sit amet, euismod ac dui.</p>
+</body>
+</html>

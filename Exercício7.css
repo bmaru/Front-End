@@ -1,0 +1,68 @@
+html, body {
+    padding: 0px;
+    background-color: #e1e0e0;
+    margin: 0px;
+    font-family: Helvetica;
+    color: #3d3d3d; 
+}
+body {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #ffffff;
+    height: 43px;
+    padding: 6px 9px;
+    box-shadow: 0 2px 0 0 rgba(169, 169, 169, 0.5);
+}
+header h1 {
+    margin: 0px;
+    line-height: 43px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.list {
+    padding: 12px 9px;
+}
+h3 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    height: 19px;
+}
+.card {
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: 2px 1px 6px -1px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding: 6px 15px;
+    margin-top: 11px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.photo {
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #ccc;
+    overflow: hidden;
+}
+.photo img {
+    width: 100%;
+}
+.card .content {
+    margin: 5px;
+    margin-left: 15px;
+}
+.card .content .nome {
+    height: 22px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.card .content .mail {
+    height: 13px;
+    font-size: 11px;
+    font-weight: 300;
+}

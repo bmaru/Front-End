@@ -1,0 +1,126 @@
+html {
+    width: 1024px;
+    height: 1024px;
+    background-color: #dbdbdb;
+}
+.nome1 {
+    width: 800px;
+    height: 20px;
+    font-family: TimesNewRomanPSMT;
+    font-size: 18px;
+    line-height: 1.11;
+    color: #f70505;
+    margin-top: 23px;
+    margin-left: 42px;
+  }
+.nome2 {
+    width: 800px;
+    height: 22px;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #288412;
+    margin-left: 42px;
+}
+.nome3 {
+    width: 800px;
+    height: 20px;
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 2;
+    color: #0c32e2;
+    margin-left: 42px;
+}
+.titulo {
+    width: 959px;
+    height: 32px;
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 0.56;
+    text-align: center;
+    color: #3d3d3d;
+    margin-top: 10px;
+}
+.box1 {
+    width: 978px;
+    height: auto;
+    border: solid 3px #f40505;
+    margin-top: 39px;
+    margin-left: 23px;
+    padding: 8px 9px;
+    box-sizing: border-box;
+}
+.text {
+    width: auto;
+    height: auto;
+    font-family: TimesNewRomanPSMT;
+    font-size: 18px;
+    text-align: justify;
+    color: #301e1e;
+    text-indent: 46px;
+}
+.box2 {
+    width: 978px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fcf9f9;
+    margin-top: 19px;
+    margin-left: 23px;
+    padding: 8px 9px;
+    box-sizing: border-box;
+}
+.text2 {
+    width: auto;
+    height: auto;
+    font-family: TimesNewRomanPS-MT;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    color: #3d3d3d;
+    text-indent: 46px;
+    
+}
+  #firstLine::first-line {
+    font-weight: bold;
+    font-style: normal;
+}
+.box3 {
+    width: 978px;
+    height: auto;
+    border-radius: 17px;
+    border: solid 13px #f9f9fb;
+    background-color: #f8f4e7;
+    margin-top: 20px;
+    margin-left: 23px;
+    padding: 8px 9px;
+    box-sizing: border-box;
+}
+.text3 {
+    width: auto;
+    height: auto;
+    font-family: TimesNewRomanPS-MT;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    color: #3d3d3d;
+    text-indent: 46px;
+}
+#firstLetter::first-letter {
+    font-size: 36px;
+}
+.text4 {
+    width: auto;
+    height: auto;
+    font-family: TimesNewRomanPS-MT;
+    font-size: 21px;
+    font-weight: bold;
+    color: #1c0ed2;
+    text-indent: 46px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    margin-left: 23px;
+}
