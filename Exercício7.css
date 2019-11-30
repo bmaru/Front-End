@@ -6,7 +6,6 @@ html, body {
     color: #3d3d3d; 
 }
 body {
-    min-width: 320px;
     display: flex;
     flex-direction: column;
 }
@@ -32,7 +31,7 @@ h3 {
     height: 19px;
 }
 .card {
-    height: 48px;
+    min-height: 48px;
     border-radius: 4px;
     box-shadow: 2px 1px 6px -1px rgba(0, 0, 0, 0.5);
     background-color: #fff;
@@ -40,8 +39,9 @@ h3 {
     margin-top: 11px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-}
+    flex-wrap: wrap;
+    align-items: center;
+} 
 .photo {
     height: 47px;
     width: 47px;
@@ -55,6 +55,18 @@ h3 {
 .card .content {
     margin: 5px;
     margin-left: 15px;
+    min-width: 200px;
+    display:flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 305px) {
+    .card {
+        justify-content: center;
+    }
+    .card .content {
+        justify-content: center;
+        align-items: center;
+    }
 }
 .card .content .nome {
     height: 22px;
