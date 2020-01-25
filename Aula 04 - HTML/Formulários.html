@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <form action="/testForm" method="POST">
+        <fieldset>
+            <legend><i class="material-icons">face</i>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" placeholder="Primeiro nome" required> 
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" placeholder="Último nome" required > 
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="ex: teste@teste.com" value="email@noreply.com" readonly>
+            <input type="checkbox" name="email">
+            <label for="contribuinte">Contribuinte</label>
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" value="M"><span>Masculino</span> 
+            <input type="radio" name="sexo" value="F"><span>Femino</span> 
+        </fieldset>
+        <fieldset>
+            <legend>Senha</legend>
+            <input type="password" name="senha" placeholder="Digite sua senha" required minlength="6">
+            <input type="password" name="confirmSenha" placeholder="Digite novamente sua senha" required minlength="6">
+        </fieldset>
+        <fieldset>
+            <legend>Foto</legend>
+            <input type="file" name="file" accept="image/*" placeholder="Carregue sua foto">
+        </fieldset>
+        <fieldset>
+            <legend>Telefone</legend>
+            <input type="tel" name="telefone" placeholder="(00) 0000-0000">
+        </fieldset>
+        <fieldset><i class="material-icons">explore</i> 
+            <legend>Cidades</legend> 
+                <select name="cidade"> 
+                    <optgroup label="Santa Catarina"> 
+                        <option value="Blumenau" label="Blumenau"></option>
+                        <option value="Florianópolis" label="Florianópolis"></option>
+                        <option value="Criciúma" label="Criciúma"></option>
+                        <option value="Lages" label="Lages"></option> 
+                    </optgroup> 
+                    <optgroup label="Rio Grande do Sul"> 
+                        <option value="Porto Alegre" label="Porto Alegre"></option>
+                        <option value="Canoas" label="Canoas"></option>
+                        <option value="Guaíba" label="Guaíba"></option>
+                        <option value="Santana do Livramento" label="Santana do Livramento"></option> 
+                    </optgroup>
+                </select>  
+        </fieldset>     
+        <fieldset> 
+            <label >Comentários</label><br> 
+            <textarea cols="80" rows="10" name="comentarios"></textarea> 
+        </fieldset> 
+        <input type="reset">
+        <input type="submit">
+        <input type="button">
+        <input type="hidden" name=dataHora value="16/11/2019">
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+        <button type="button" onclick="alert('Dados enviados com sucesso!')">Enviar</button>
+    </form>
+    <progress id="progress" value="50" max="100">70%</progress> 
+</body>
+</html>

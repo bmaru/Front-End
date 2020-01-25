@@ -1,0 +1,124 @@
+body, html {
+    margin: 0px;
+    font-family: 'Open Sans';
+    background-color: #E8E8E8;
+    color: #464646;
+}
+  
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+header .logo {
+    float: left;
+    font-weight: bold;
+}
+header .menu {
+    float: right;
+}
+header .menu i {
+    font-size: 36px;
+}
+.feed {
+    padding: 0px 24px;
+    overflow-y: scroll;
+    width: calc(100% - 48px);
+}
+.feed .post {
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+.header-post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.header-post .menu-btn {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+.header-post h3, .header-post h6 {
+    margin: 0px;
+}
+.header-post h6 {
+    margin: 0px;
+    font-weight: 300;
+    margin-top: 6px;
+}
+.header-post .content {
+    margin-left: 15px;
+}
+.post .body-post {
+    min-height: 130px;
+    
+}
+.footer-post {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-post .btn-like {
+    display: flex;
+    border: 1px #747474 solid;
+    border-radius: 2px;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.footer-post .btn-like:active {
+    opacity: 0.7;
+}
+.footer-post .btn-like label {
+    margin-right: 16px;
+} 
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 52px;
+    background-color: #fff;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+footer .material-icons {
+    font-size: 36px;
+}
+.photo {
+    width: 60px;
+    height: 60px;
+    background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.photo1 {
+    width: 60px;
+    height: 60px;
+    background-image: url('https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1031&q=80');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.photo2 {
+    width: 60px;
+    height: 60px;
+    background-image: url('https://images.unsplash.com/photo-1507101105822-7472b28e22ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80');
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+}

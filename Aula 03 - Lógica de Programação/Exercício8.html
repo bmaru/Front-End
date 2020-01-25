@@ -1,0 +1,36 @@
+<!-- 8 - Faça um Programa que peça o valor da gasolina e do álcool de um posto e diga qual é o combustível mais vantajoso abastecer, 
+sabendo que somente é vantagem abastecer álcool se o preço do mesmo é menor ou igual a 70% do valor da gasolina. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 8</title>
+    <script>
+    function calc() {
+        let gasolina = parseFloat(document.getElementById('gasolina').value)
+        let alcool = parseFloat(document.getElementById('alcool').value)
+        if (alcool <= (gasolina * 0.7)) {
+            document.write('Abasteça com álcool.')
+            }
+            else {
+                document.write('Abasteça com gasolina.')
+            }
+    }
+    </script>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <label> Gasolina </label>
+            <input type="number" id="gasolina">
+        </div>
+        <div>
+            <label> Álcool </label>
+            <input type="number" id="alcool">
+        </div>
+    </form>
+    <button type="button" onclick="calc()">Calcular</button> 
+</body>
+</html>

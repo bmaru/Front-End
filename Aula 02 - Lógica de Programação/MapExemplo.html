@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Exemplo</title>
+</head>
+<body>
+    <script>
+        let produtos = [
+            {nome: 'produto 01', precoCusto:25.90},
+            {nome: 'produto 02', precoCusto:215.00},
+            {nome: 'produto 03', precoCusto:999.90},
+            {nome: 'produto 04', precoCusto:799.70},
+            {nome: 'produto 05', precoCusto:35.90}
+        ];
+        function calcValor(produtos, percLucro) {
+            return produtos.map(item=>{
+                item.valorFinal = item.precoCusto * percLucro;
+                return item;
+            });
+        }
+        let produtosRelatorio = calcValor(produtos, 0.40);
+        produtosRelatorio.forEach(item=> {
+            document.write(`<p> <b>${item.nome}:</b> R$ ${item.valorFinal} </p>`)
+        });
+    </script>
+</body>
+</html>

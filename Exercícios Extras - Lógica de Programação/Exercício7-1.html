@@ -1,0 +1,26 @@
+<!-- 7 - Escreva um script que mostre na tela o desenho abaixo:
+$$$$$
+$$$$
+$$$
+$$
+$ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <script>
+        for (let i = 5; i >= 1; i --) {
+            let text = '<p>';
+            for (let ii = 1; ii <= i; ii++) {
+                text = text + '$';
+            }
+            text = text + '</p>';
+            document.write(text);
+        }
+    </script>
+</body>
+</html>

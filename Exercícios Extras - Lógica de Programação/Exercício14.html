@@ -1,0 +1,33 @@
+<!-- 14 - Escreva um script que apresente uma lista com as opções ‘1 - Sacar’, ‘2 - Depositar’, ‘3 - verificar saldo’. 
+Em seguida solicite que o usuário informe um número entre 1 e 3. 
+Caso o usuário tenha informado o número 1 apresente a mensagem “você escolheu a opção sacar”, 
+caso o usuário tenha informado o número 2 apresente a mensagem “você escolheu a opção depositar”, 
+caso o usuário tenha informado o número 3, apresente a mensagem ‘você escolheu a opção verificar saldo’. 
+Caso o usuário tenha informado um número fora do range(1,2,3) apresente a mensagem ‘Opção inválida’. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14</title>
+    <script>
+        let opcao = parseInt (window.prompt ('1- Sacar \n 2-Depositar \n 3- Verificar saldo \n Informe um número entre 1 e 3'))
+        switch(opcao) {
+            case 1:
+                document.write('<h1> Você escolheu a opção sacar </h>')
+                    break;
+            case 2: 
+                document.write('<h1> Você escolheu a opção depositar </h>')
+                    break;
+            case 3:
+                document.write('<h1> Você escolheu a opção verificar saldo </h>')
+                    break;
+            default:
+            document.write('<h1> Opção inválida </h>')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

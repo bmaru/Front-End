@@ -1,0 +1,35 @@
+<!-- 4 – Peça ao usuário para digitar várias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <script>
+        function maxIdade() {
+            let values = document.getElementById('values').value;
+            if (values) {
+                values = values.split(',');
+                values = values.map(value=>parseFloat(value))
+                let result = [];
+                for (let i = 0; i < values.length; i++) {
+                    if(values[i]>=18) {
+                       result.push(values[i])
+                    }
+                }
+                document.getElementById('resultadomaior').append(result.length);   
+                document.getElementById('resultadomenor').append(values.length - result.length);
+            }
+        }     
+        </script>
+</head>
+<body>
+    <div>
+         <label>Informe as idades.</label>
+        <input type="text" id="values">
+    </div>
+        <p id="resultadomaior"></p>
+        <p id="resultadomenor"></p>
+    <button onclick="maxIdade()">Verificar</button>
+</body>
+</html>

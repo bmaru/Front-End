@@ -1,0 +1,18 @@
+<!-- 11 - Escreva um script que solicite uma frase ao usuário e em seguida apresente a frase digitada separada em duas partes. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+</head>
+<body>
+    <script>
+    let frase = window.prompt('Digite uma frase'); 
+    let part1 = frase.substr(0, parseInt(frase.length/2)) 
+    let part2 = frase.substr(parseInt(frase.length/2), frase.length)
+    document.write ('<p>'+part1+'</p>');
+    document.write ('<p>'+part2+'</p>');
+    </script>
+</body>
+</html>

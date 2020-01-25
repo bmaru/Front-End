@@ -1,0 +1,134 @@
+body, html {
+  background-color: #e8e8e8;
+  font-family: 'Open Sans', sans-serif;
+  color: #323232;
+  min-width: 400px; }
+
+.bg-light {
+  background-color: #fff !important; }
+
+.navbar {
+  min-height: 98px; }
+  .navbar .navbar-brand {
+    font-size: 36px;
+    font-weight: bold; }
+  .navbar button.navbar-toggler {
+    border: none;
+    outline: none; }
+  .navbar button .material-icons {
+    color: #323232;
+    font-size: 36px; }
+  .navbar .logout-btn {
+    cursor: pointer;
+    user-select: none; }
+    .navbar .logout-btn:active {
+      opacity: 0.7; }
+
+.container {
+  margin-top: 150px;
+  max-width: 610px; }
+  .container .card {
+    margin-bottom: 30px; }
+    .container .card .card-header, .container .card .card-body, .container .card .card-footer {
+      background-color: #fff;
+      border: none; }
+  .container .card-header {
+    display: flex;
+    position: relative; }
+    .container .card-header img {
+      width: 66px;
+      height: 66px;
+      background-position: center center;
+      background-size: cover; }
+    .container .card-header .content-header {
+      margin-left: 17px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .container .card-header .content-header .name {
+        font-size: 16px;
+        font-weight: 600;
+        font-style: italic; }
+      .container .card-header .content-header .time {
+        background-color: rgba(0, 0, 0, 0.05);
+        text-align: center;
+        font-size: 12px;
+        color: rgba(50, 50, 50, 0.4); }
+      .container .card-header .content-header button {
+        background-color: rgba(0, 0, 0, 0.05);
+        border: none;
+        position: absolute;
+        right: 21px;
+        top: 14px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 15px; }
+        .container .card-header .content-header button i {
+          font-size: 18px; }
+  .container .card-body {
+    font-size: 14px;
+    line-height: 1.29;
+    color: rgba(50, 50, 50, 0.7); }
+    .container .card-body .likes {
+      position: relative;
+      display: flex; }
+      .container .card-body .likes div {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        box-shadow: 0 2px 17px 0px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container .card-body .likes div img {
+          width: 12px;
+          height: 12px; }
+      .container .card-body .likes .like {
+        z-index: 4; }
+      .container .card-body .likes .core {
+        z-index: 3;
+        margin-left: -4.5px; }
+      .container .card-body .likes .mad {
+        z-index: 2;
+        margin-left: -4.5px; }
+      .container .card-body .likes label {
+        font-size: 12px;
+        font-weight: 600;
+        font-style: italic;
+        margin-left: 5px;
+        margin-bottom: 0px;
+        line-height: 20px;
+        color: rgba(50, 50, 50, 0.4); }
+  .container .card-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .container .card-footer button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      border-radius: 17.5px;
+      box-shadow: 0 3px 30px 0px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      margin-left: 12px;
+      min-width: 110px;
+      font-size: 14px;
+      font-weight: 600;
+      font-style: italic;
+      color: rgba(50, 50, 50, 0.4); }
+      .container .card-footer button i {
+        margin-right: 12px; }
+      .container .card-footer button:active {
+        background-color: #cccccc;
+        color: #fff !important; }
+
+@media screen and (max-width: 600px) {
+  .card {
+    background-color: transparent !important;
+    border: none; }
+    .card .card-header, .card .card-footer {
+      background-color: transparent !important; } }

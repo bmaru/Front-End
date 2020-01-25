@@ -1,0 +1,60 @@
+<!-- 5 – Crie um programa que entre com os dados de altura e sexo de 5 pessoas. 
+Imprima na tela quantas pessoas são do sexo masculino e quantas pessoas são do sexo feminino. 
+Mostre também qual é a maior altura e se essa altura é de um homem ou uma mulher. -->
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Exercício 5</title>
+     <script>
+        let info = [];
+        function addInfo() {
+            let form = new FormData(document.getElementById('form'))
+            info.push({altura:form.get('altura'), sexo:form.get('gender')})
+        }
+        function verificar() {
+            let masculino = []
+            let feminino = []
+            info.forEach(item=>{
+                if (item.sexo === 'male') {
+                    masculino.push(item)
+                } else {
+                    feminino.push(item)
+                }
+            })
+            let maiorAltura = 0;
+            let maiorAlturaSexo;
+            for (let i = 0; i < info.length; i++) {
+               if (info[i].altura > maiorAltura) {
+                    maiorAltura = info[i].altura 
+                    maiorAlturaSexo = info[i].sexo
+               }
+            }
+            document.getElementById('resultadoMasculino').append(masculino.length);   
+            document.getElementById('resultadoFeminino').append(feminino.length);
+            document.getElementById('resultadoAltura').append(maiorAltura);
+            document.getElementById('resultadoAlturaSexo').append(maiorAlturaSexo);
+        }   
+     </script>
+ </head>
+ <body>
+     <form id="form">
+         <div>
+             <label> Altura </label>
+             <input type="number" name="altura">
+         </div>
+         <div>
+            <label> Sexo </label>
+            <input type="radio" name="gender" value="male"> Masculino
+            <input type="radio" name="gender" value="female"> Feminino<br>
+         </div>
+         <button type="button" onclick="addInfo()">Adicionar</button>
+     </form>
+     <button type="button" onclick="verificar()">Verificar</button>
+    <p id="resultadoMasculino"></p>
+    <p id="resultadoFeminino"></p>
+    <p id="resultadoAltura"></p>
+    <p id="resultadoAlturaSexo"></p>
+ </body>
+ </html>

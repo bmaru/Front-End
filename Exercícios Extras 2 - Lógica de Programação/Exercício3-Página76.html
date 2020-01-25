@@ -1,0 +1,60 @@
+<!-- 3 - Escreva um programa que solicite o nome e o valor de 10 produtos. 
+Em seguida calcule a média de preço de todos os produtos e apresente duas listas. 
+A primeira lista deve conter todos os produtos com o valor abaixo da média, 
+já a segunda lista deve conter todos os produtos com valor igual ou maior que a média. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <form>
+         <div>
+            <label> Informe o nome do produto. </label>
+            <input type="text" id="nomeProduto">
+        </div>
+        <div>
+            <label> Informe o valor do produto. </label>
+            <input type="number" id="valorProduto">
+        </div>
+            <button type="button" onclick="addProd()">Adicionar</button>
+    </form>
+    <div>
+        <label id="media"></label>
+    </div>
+    <button onclick="calcMedia()">Média</button>
+    <p id="resultadomaior"></p>
+    <p id="resultadomenor"></p>
+<button onclick="maxMedia()">Verificar</button>
+<script>
+    let inputNome = document.getElementById('nomeProduto');
+    let inputValor = document.getElementById('valorProduto');
+    let produtos = [];
+
+    function addProd() {
+        produtos.push({nomeProduto:inputNome.value,valorProduto:inputValor.value})
+    }
+    function calcMedia() { 
+        if (produtos) {
+            let soma = 0;
+            for (let i = 0; i < produtos.length; i++) {        
+                soma = soma + parseFloat(produtos[i].valorProduto);         
+            }
+            let media = soma / produtos.length;
+            document.getElementById('media').textContent = media;
+        }
+    }
+    function maxMedia() {
+            for (let i = 0; i < produtos.length; i++) {
+                if(produtos[i].valorProduto >= media) {
+                    document.getElementById('resultadomaior').append(produtos[i].valorProduto);      
+                } else {
+                    document.getElementById('resultadomenor').append(produtos[i].valorProduto);
+                }
+            }
+    }
+</script>
+</body>
+</html>

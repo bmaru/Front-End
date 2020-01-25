@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <input id="display" type="text" style="width: 172px;"> 
+    <br>
+    <br>
+    <button onclick="clique()" style="width: 172px; height: 40px;">Limpar</button>
+    <br>
+    <br>
+    <button onclick="clique(7)" style="width: 40px; height: 40px;"> 7 </button>
+    <button onclick="clique(8)" style="width: 40px; height: 40px;"> 8 </button>
+    <button onclick="clique(9)" style="width: 40px; height: 40px;"> 9 </button>
+    <button onclick="clique('/')" style="width: 40px; height: 40px;"> / </button>
+    <br>
+    <br>
+    <button onclick="clique(4)" style="width: 40px; height: 40px;"> 4 </button>
+    <button onclick="clique(5)" style="width: 40px; height: 40px;"> 5 </button>
+    <button onclick="clique(6)" style="width: 40px; height: 40px;"> 6 </button>
+    <button onclick="clique('*')" style="width: 40px; height: 40px;"> X </button>
+    <br>
+    <br>
+    <button onclick="clique(1)" style="width: 40px; height: 40px;"> 1 </button>
+    <button onclick="clique(2)" style="width: 40px; height: 40px;"> 2 </button>
+    <button onclick="clique(3)" style="width: 40px; height: 40px;"> 3 </button>
+    <button onclick="clique('-')" style="width: 40px; height: 40px;"> - </button>
+    <br>
+    <br>
+    <button onclick="clique(0)" style="width: 40px; height: 40px;"> 0 </button>
+    <button onclick="clique('.')" style="width: 40px; height: 40px;"> . </button>
+    <button onclick="clique('+')" style="width: 40px; height: 40px;"> + </button>
+    <button onclick="clique('=')" style="width: 40px; height: 40px;"> = </button>
+    <br>
+    <br>
+    <script>
+        let input = document.getElementById('display');
+        function clique(value) {
+            if (!value) {
+                input.value = '';
+                return
+            }
+            if (value === '='){
+                input.value = eval(input.value)
+            } else {
+                input.value = input.value + value
+            }
+        }
+    </script>
+</body>
+</html>

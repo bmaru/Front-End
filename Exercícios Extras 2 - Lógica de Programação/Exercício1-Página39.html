@@ -1,0 +1,33 @@
+<!-- 1 - Dado o script abaixo, escreva o resultado das seguintes comparações:
+a. valorA E valorB
+b. valorA E valorB E valorC
+c. valorA E valorC
+d. valorB E valorC
+e. valorA OU valorB
+f. valorB OU ValorC
+g. valorA OU valorB ou valorC
+h. valorC OU valorC -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Página 39</title>
+</head>
+<body>
+    <script>
+        let valorA = true;
+        let valorB = true;
+        let valorC = false;
+        document.write(valorA && valorA);
+        document.write(valorA && valorB);
+        document.write(valorA && valorB && valorC);
+        document.write(valorA && valorC);
+        document.write(valorB && valorC);
+        document.write(valorA || valorB);
+        document.write(valorB || valorC);
+        document.write(valorA || valorB || valorC);
+        document.write(valorA || valorC);
+    </script>
+</body>
+</html>

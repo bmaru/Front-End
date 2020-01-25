@@ -1,0 +1,32 @@
+<!-- 6 – Peça ao usuário para digitar vários nomes. Exiba na tela todos os nomes digitados, porém de maneira invertida (do último para o primeiro). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <script>
+        let nome = [];
+        function addNome() {
+            let form = new FormData(document.getElementById('form'))
+            nome.push(form.get('nome'))
+        }
+        function inverter() {
+            var reversed = nome.reverse(); 
+            console.log('reversed: ', reversed);
+            document.getElementById('inverter').append(nome);
+        }
+    </script>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <label> Nome </label>
+            <input type="text" name="nome">
+        </div>
+        <button type="button" onclick="addNome()">Adicionar</button>
+    </form>
+    <button type="button" onclick="inverter()">Inverter</button>
+    <p id="inverter"></p>
+</body>
+</html>

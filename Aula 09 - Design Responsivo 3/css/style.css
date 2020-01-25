@@ -1,0 +1,132 @@
+html, body {
+  font-family: 'Open Sans', sans-serif; }
+
+.navbar-brand img {
+  height: 40px;
+  margin-left: 30px; }
+
+.nav-item {
+  font-size: 14px;
+  font-weight: bold; }
+
+.background-img {
+  width: 100%;
+  height: 410px;
+  background-repeat: repeat-y;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1494961104209-3c223057bd26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=992&q=80"); }
+
+.background-box {
+  width: 356px;
+  height: 410px;
+  background-color: #127bbe;
+  padding: 28px 27px;
+  position: absolute;
+  right: 0px;
+  margin-right: 100px; }
+  .background-box h1 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 300; }
+  .background-box p {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 300; }
+  .background-box .form-group {
+    width: 300px;
+    height: 107px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    margin-bottom: 0px; }
+  .background-box #area {
+    font-size: 14px;
+    font-weight: 300;
+    color: #d3dde0; }
+  .background-box #areaHelp {
+    font-size: 12px;
+    font-weight: 300;
+    color: #636363;
+    margin-left: 15px; }
+  .background-box #button {
+    width: 300px;
+    height: 45px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    background-color: #f1f4f5;
+    font-size: 14px;
+    font-weight: 300;
+    color: #636363;
+    margin: 0px; }
+
+.service {
+  background-color: #ffffff; }
+  .service h1 {
+    font-size: 24px;
+    text-align: center; }
+  .service p {
+    font-size: 14px;
+    text-align: center; }
+  .service .card {
+    border: solid 1px #d3dde0;
+    height: 260px; }
+    .service .card .box {
+      width: 62px;
+      border-radius: 5px;
+      background-color: #127bbe;
+      color: #fff;
+      font-size: 35px;
+      text-align: center;
+      margin: auto; }
+    .service .card .card-title {
+      font-size: 17px;
+      text-align: center; }
+    .service .card .card-text {
+      font-size: 14px;
+      color: #2e2f30;
+      text-align: center; }
+    .service .card #btn {
+      font-size: 14px;
+      text-align: center;
+      color: #127bbe;
+      background-color: #fff;
+      border-color: #fff; }
+
+.stage {
+  background-color: #f1f4f5;
+  color: #5a5956; }
+  .stage p {
+    font-size: 14px;
+    text-align: center; }
+  .stage h1 {
+    font-size: 24px;
+    text-align: center; }
+
+.container-fluid {
+  background-color: #e7ecee;
+  color: #5a5956; }
+  .container-fluid ul {
+    list-style-type: none;
+    padding: 0px; }
+    .container-fluid ul li {
+      font-size: 13px; }
+  .container-fluid h1 {
+    font-size: 16px; }
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer ul li {
+      padding: 10px 10px; }
+  footer p {
+    padding: 10px 10px; }

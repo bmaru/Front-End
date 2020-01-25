@@ -1,0 +1,21 @@
+<!-- 4 - Escreva um script que solicite um número ao usuário e em seguida escreva o valor do número informado multiplicado por 5. 
+O script deve continuar solicitando novos números até que o usuário digite um número negativo. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <script>
+    let num1 = parseInt(window.prompt('Digite um número'))
+    while(num1 > 0) {
+        let result = num1 * 5
+        document.write('<h1>'+result+'</h1>')
+        num1 = parseInt(window.prompt('Digite um número'));
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

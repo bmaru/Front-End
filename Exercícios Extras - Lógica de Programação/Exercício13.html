@@ -1,0 +1,22 @@
+<!-- 13 - Escreva um script que solicite quatro palavras ao usuário e em seguida apresente todas as palavras separadas por um traço(‘ - ’). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+    <script>
+        let text = '';
+    for (let i = 0; i < 5; i++) {
+       let palavra = window.prompt(i+ '- Digite uma palavra:'); 
+        text = text + palavra;
+        if (i < 4) {
+            text = text + ' - ';
+        }
+    }
+    document.write('<p>' + text+ '</p>')
+    </script>
+</body>
+</html>

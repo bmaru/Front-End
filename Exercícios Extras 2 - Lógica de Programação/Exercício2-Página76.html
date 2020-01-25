@@ -1,0 +1,49 @@
+<!-- 2 - Escreva um programa que solicite 10 notas e em seguida apresente a menor nota digitada e a maior nota digitada. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <script>
+        function maxNumber() {
+            let values = document.getElementById('values').value;
+            if (values) {
+                values = values.split(',');
+                values = values.map(value=>parseFloat(value))
+                let max = 0;
+                for (let i = 0; i < values.length; i++) {
+                    if(values[i]>max) {
+                        max = values [i]
+                    }
+                }
+                document.getElementById('resultado').append(max);
+            }
+        }
+        function minNumber() {
+            let values = document.getElementById('values').value;
+            if (values) {
+                values = values.split(',');
+                values = values.map(value=>parseFloat(value))
+                let min = 99;
+                for (let i = 0; i < values.length; i++) {
+                    if(values[i]<min) {
+                        min = values [i]
+                    }
+                }
+                document.getElementById('resultado').append(min);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>Informe dez notas.</label>
+        <input type="text" id="values">
+    </div>
+    <div id="resultado">
+    </div>
+    <button onclick="maxNumber()">Verificar</button>
+    <button onclick="minNumber()">Verificar</button>
+</body>
+</html>

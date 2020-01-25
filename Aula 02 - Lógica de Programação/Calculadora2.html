@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2</title>
+</head>
+<body>
+    <input id="display" type="text" style="width: 172px;"> 
+    <br>
+    <br>
+    <button onclick="clique()" style="width: 172px; height: 40px;">Limpar</button>
+    <br>
+    <br>
+    <button onclick="clique(7)" style="width: 40px; height: 40px;"> 7 </button>
+    <button onclick="clique(8)" style="width: 40px; height: 40px;"> 8 </button>
+    <button onclick="clique(9)" style="width: 40px; height: 40px;"> 9 </button>
+    <button onclick="clique('/')" style="width: 40px; height: 40px;"> / </button>
+    <br>
+    <br>
+    <button onclick="clique(4)" style="width: 40px; height: 40px;"> 4 </button>
+    <button onclick="clique(5)" style="width: 40px; height: 40px;"> 5 </button>
+    <button onclick="clique(6)" style="width: 40px; height: 40px;"> 6 </button>
+    <button onclick="clique('*')" style="width: 40px; height: 40px;"> X </button>
+    <br>
+    <br>
+    <button onclick="clique(1)" style="width: 40px; height: 40px;"> 1 </button>
+    <button onclick="clique(2)" style="width: 40px; height: 40px;"> 2 </button>
+    <button onclick="clique(3)" style="width: 40px; height: 40px;"> 3 </button>
+    <button onclick="clique('-')" style="width: 40px; height: 40px;"> - </button>
+    <br>
+    <br>
+    <button onclick="clique(0)" style="width: 40px; height: 40px;"> 0 </button>
+    <button onclick="clique('.')" style="width: 40px; height: 40px;"> . </button>
+    <button onclick="clique('+')" style="width: 40px; height: 40px;"> + </button>
+    <button onclick="clique('=')" style="width: 40px; height: 40px;"> = </button>
+    <br>
+    <br>
+    <script>
+        let valueDisplay = '';
+        let fat1 = '';
+        let fat2 = '';
+        let input = document.getElementById('display');
+        let operacao = '';
+        function clique(value) {
+            if (!value) {
+                valueDisplay = '';
+                fat1 = '';
+                fat2 = '';
+                operacao = '';
+                input.value = '';
+                return
+            }
+            switch (value) {
+                case '/': 
+                case '*': 
+                case '-': 
+                case '+': 
+                    operacao = value;
+                    break;
+                case '=':
+                    calcular(parseFloat(fat1), parseFloat (fat2), operacao);
+                    break;
+                default:
+                    if (operacao) {
+                        fat2 = fat2 + value;
+                        valueDisplay = fat2;
+                        input.value = valueDisplay;
+                    } else {
+                        valueDisplay = valueDisplay + value
+                        input.value = valueDisplay;
+                        fat1 = valueDisplay;
+                        }                  
+            }
+        }
+        function calcular(fat1, fat2, operacao) {
+            switch (operacao) {
+                case '/':
+                    input.value = fat1 / fat2
+                    break;
+                case '*':
+                    input.value = fat1 * fat2
+                    break;
+                case '-':
+                    input.value = fat1 - fat2
+                    break;
+                case '+':
+                    input.value = fat1 + fat2
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

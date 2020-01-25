@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>like contour</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="355" height="129" rx="5"></rect>
+        <filter x="-13.1%" y="-33.7%" width="126.2%" height="172.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="0" width="20" height="20" rx="10"></rect>
+        <filter x="-132.5%" y="-122.5%" width="365.0%" height="365.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="0" y="0" width="20" height="20" rx="10"></rect>
+        <filter x="-132.5%" y="-122.5%" width="365.0%" height="365.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-post-nouveau-+-stories" transform="translate(-30.000000, -511.000000)">
+            <rect fill="#F8F8F8" x="0" y="0" width="375" height="812"></rect>
+            <g id="post-photo-copy" transform="translate(10.000000, 353.000000)">
+                <g id="Rectangle" transform="translate(0.000000, 54.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Group-7" mask="url(#mask-2)">
+                        <g transform="translate(15.000000, 99.000000)">
+                            <g id="like-copy" transform="translate(15.000000, 0.000000)">
+                                <g id="Rectangle">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                </g>
+                            </g>
+                            <g id="like">
+                                <g id="Rectangle">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                </g>
+                                <g transform="translate(4.571429, 4.571429)" id="baseline-thumb_up-24px">
+                                    <g>
+                                        <polygon id="Path" points="0 0 11.4285714 0 11.4285714 11.4285714 0 11.4285714"></polygon>
+                                        <path d="M0.476190476,10 L2.38095238,10 L2.38095238,4.28571429 L0.476190476,4.28571429 L0.476190476,10 Z M10.952381,4.76190476 C10.952381,4.23809524 10.5238095,3.80952381 10,3.80952381 L6.9952381,3.80952381 L7.44761905,1.63333333 L7.46190476,1.48095238 C7.46190476,1.28571429 7.38095238,1.1047619 7.25238095,0.976190476 L6.74761905,0.476190476 L3.61428571,3.61428571 C3.43809524,3.78571429 3.33333333,4.02380952 3.33333333,4.28571429 L3.33333333,9.04761905 C3.33333333,9.57142857 3.76190476,10 4.28571429,10 L8.57142857,10 C8.96666667,10 9.3047619,9.76190476 9.44761905,9.41904762 L10.8857143,6.06190476 C10.9285714,5.95238095 10.952381,5.83809524 10.952381,5.71428571 L10.952381,4.76190476 Z" id="Shape" fill="#4267B2"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

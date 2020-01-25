@@ -1,0 +1,21 @@
+<!-- 2 - Escreva uma função que recebe um número como parâmetro e mostre a tabuada (até 10x). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício2</title>
+    <script src="./Exercício2.js"></script>
+    <script>
+        let num = parseInt(window.prompt('Digite um número'));
+        let tab = tabuada(num);
+        document.write('<h1>Tabuada do '+num+ '</h1>')
+        tab.forEach((value, index) => {
+            document.write('<h3>'+ (parseInt (index) + 1) + 'x'+ num +'= '
+                           + value + '</h3>')
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

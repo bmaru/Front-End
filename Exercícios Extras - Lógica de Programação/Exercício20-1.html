@@ -1,0 +1,31 @@
+<!-- 20 - Escreva um script que solicite as 3 notas de um aluno e em seguida calcule o valor da média das notas. 
+Caso a média seja maior ou igual a 9 escreva a mensagem “Conceito A”, 
+caso a nota seja menor que 9 e maior ou igual a 7 escreva a mensagem “Conceito B”, 
+caso a nota seja menor que 7 e maior ou igual a 5 escreva a mensagem “Conceito C”, 
+se a nota for menor que 5 escreva a mensagem “Conceito Insuficiente”; -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let nota1 = parseFloat (window.prompt('Digite a primeira nota'))   
+    let nota2 = parseFloat (window.prompt('Digite a segunda nota'))    
+    let nota3 = parseFloat (window.prompt('Digite a terceira nota'))    
+    let media = (nota1 + nota2 + nota3)/3;
+    if ( media >= 9 ) {
+        document.write('<h1> Conceito A </h1>');
+    } else if ( media >= 7 && media < 9 ) {
+        document.write('<h1> Conceito B </h1>');
+    } else if ( media  >=5 && media < 7 ) {
+        document.write('<h1> Conceito C </h1>');
+    } else {
+        document.write('<h1> Conceito Insuficiente </h1>');
+    }
+    </script>
+</body>
+</html>

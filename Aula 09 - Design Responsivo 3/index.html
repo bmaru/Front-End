@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chep</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Call Us +62 21 161782 |<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sign In |<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Change Country<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/CHEP_%28Brambles%29_logo.svg/1280px-CHEP_%28Brambles%29_logo.svg.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">CATALOG SEARCH</a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">NEWS</a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">MEDIA</a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">HISTORY</a>
+                </li>
+                <li class="nav-item disabled">
+                    <a class="nav-link" href="#">CAREERS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div  class="background-img">
+        <div class="background-box">
+            <h1>Find Local Customer</h1>
+            <p>Enter your local area to find customer number</p>
+            <div>
+               <form>
+                    <div class="form-group">
+                        <input type="area" class="form-control" id="area" placeholder="Enter local area, ex : Greater Jakarta">
+                        <small id="areaHelp" class="form-text text-muted">Press enter to go to the next step.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="button">FIND LOCAL CUSTOMER</button> 
+                    <button type="submit" class="btn btn-primary btn-block" id="button">FIND CUSTOMER BY POSTAL CODE</button>
+                    <button type="submit" class="btn btn-primary btn-block" id="button">REQUEST SALES OPPORTUNITIES</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <div class="service mt-4">
+        <h1>SERVICE AND PRODUCT</h1>
+        <p>Our industry solutions involve a combination of services, products and systems.</p>
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="card col-6 col-md-4 ">
+                    <div class="box mt-4">PL</div>
+                    <div class="card-body">
+                        <h5 class="card-title">PALLETS</h5>
+                        <p class="card-text">CHEP Provide a range of wooden pallets and plastic pallets for all industry types</p>
+                        <a href="#" class="btn btn-primary" id="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 ">
+                    <div class="box mt-4">CT</div>
+                    <div class="card-body">
+                        <h5 class="card-title">CONTAINERS</h5>
+                        <p class="card-text">CHEP offers a range of Pallecons (IBCs), Automotive, Catalyst & Chemical and Aerospace.</p>
+                        <a href="#" class="btn btn-primary" id="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4">
+                    <div class="box mt-4">RP</div>
+                    <div class="card-body">
+                        <h5 class="card-title">REUSABLE PLASTIC CRATES</h5>
+                        <p class="card-text">A comprehensive selection of reusable crates and containers for the fresh food industry</p>
+                        <a href="#" class="btn btn-primary" id="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4">
+                    <div class="box mt-4">IT</div>
+                    <div class="card-body">
+                        <h5 class="card-title">IT SERVICES AND PORTALS</h5>
+                        <p class="card-text">Access to dedicated portals and services</p>
+                        <a href="#" class="btn btn-primary" id="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4">
+                    <div class="box mt-4">PF</div>
+                    <div class="card-body">
+                        <h5 class="card-title">PRODUCT FINDER</h5>
+                        <p class="card-text">Product information and specifications of all CHEP's products globally</p>
+                        <a href="#" class="btn btn-primary" id="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4">
+                    <div class="box mt-4">IS</div>
+                    <div class="card-body">
+                        <h5 class="card-title">INDUSTRY SOLUTIONS</h5>
+                        <p class="card-text">CHEP provides tailored solutions to meet the unique business requirements of our customers.</p>
+                        <a href="#" class="btn btn-primary" id="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stage pt-4 pb-4">
+        <h1>SERVICE OF EACH STAGE OF THE SUPPLY CHAIN</h1>
+        <p>CHEP helps customers move, store and protect materials as they flow through each stage of their supply chain.</p>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h1>Source</h1>
+                    <p>Many of our customers around the world are using our pallets, containers and crates to manage the flow of raw materials and other inputs they source from suppliers for their processing & production facilities.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h1>Make</h1>
+                    <p>We have a lot of food and non-food manufacturing customers across a range of industries using timber pallets, plastic pallets, intermediate bulk containers and container accessories in their production facilities.</p>                
+                </div>
+                <div class="col-12 col-md-4">
+                    <h1>Deliver</h1>
+                    <p>Whether you are a vegetable grower, a meat packer, a breakfast cereal or paint manufacturer - companies of all types operating supply chains want their product to reach their customers in good condition, in the most cost effective way.</p>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-4 pb-4">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-12 col-md-2">
+                <h1>Industry Solutions</h1>
+                <ul>
+                    <li>Aerospace Solutions</li>
+                    <li>Automotive Solutions</li>
+                    <li>Catalyst & Chemical Solutions</li>
+                    <li>Consumer Goods Solutions</li>
+                    <li>Fresh Food Solutions</li>
+                    <li>Manufacturing Solutions</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h1>Services And Products</h1>
+                <ul>
+                    <li>Where can CHEP help?</li>
+                    <li>Pallets</li>
+                    <li>Containers</li>
+                    <li>Reusable Plastic Crates</li>
+                    <li>Product Finder</li>
+                    <li>Service Centres</li>
+                    <li>Portals and IT Services</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h1>Resources And Media</h1>
+                <ul>
+                    <li>Case Studies</li>
+                    <li>Calculators</li>
+                    <li>Videos</li>
+                    <li>White papers</li>
+                    <li>Blog</li>
+                    <li>Media</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h1>About CHEP</h1>
+                <ul>
+                    <li>Customer Portfolio</li>
+                    <li>Suppliers</li>
+                    <li>Fast Facts</li>
+                    <li>History</li>
+                    <li>Supporting Local Communities</li>
+                    <li>Awards & Recognition</li>
+                    <li>Associations & Memberships</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+                <h1>Resources And Media</h1>
+                <ul>
+                    <li>Environment & Sustainability</li>
+                    <li>Improved Supply Chain Efficiency</li>
+                    <li>Industry Expertise</li>
+                    <li>Outsourcing Partners</li>
+                    <li>Innovation Centre</li>
+                    <li>Equipment Pooling Solutions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>Sitemap </li>
+            <li>|</li>
+            <li>Privacy</li>
+            <li>|</li>
+            <li>Term & Condition</li>
+            <li>|</li>
+            <li>Feedback</li>
+        </ul>
+        <p>Copyright 2015 - All Right Reserved</p>
+    </footer>
+</body>
+</html>

@@ -41,6 +41,7 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
 } 
 .photo {
     height: 47px;
@@ -77,4 +78,14 @@ h3 {
     height: 13px;
     font-size: 11px;
     font-weight: 300;
+}
+.card .status {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+    top: 9px;
+    left: 3px;
+    border: 2px solid #fff;
 }

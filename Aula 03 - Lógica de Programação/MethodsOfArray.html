@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Methods Of Array</title>
+    <script>
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(`Arrays - ${fruits}<br>`)
+        document.write(`<p>POP</p>`);
+        document.write(`<p>${fruits.pop()} </p>`);
+        document.write(`<p>${fruits} </p>`);
+        document.write(`<p>SHIFT</p>`);
+        document.write(`<p>${fruits.shift()} </p>`);
+        document.write(`<p>${fruits} </p>`);
+        document.write(`<p>UNSHIFT</p>`);
+        document.write(`<p>${fruits.unshift('Lemon')} </p>`);
+        document.write(`<p>${fruits} </p>`);
+        document.write(`<p>Delete não é exclusivo do Array</p>`);
+        document.write(`<p>${delete fruits[1]} </p>`);
+        document.write(`<p>${fruits} </p>`);
+        var teste = {msg: 'olá'};
+        console.log(teste.msg);
+        delete teste.msg;
+        console.log(teste.msg);
+        document.write(`<p>Splice</p>`);
+        document.write(`<p>${fruits.splice(2,0, "Strawberry", "Grape")} </p>`);
+        document.write(`<p>${fruits} </p>`);
+    </script>
+</head>
+<body>
+</body>
+</html>

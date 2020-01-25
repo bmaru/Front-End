@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Design Responsivo</title>
+    <style>@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">APEX</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="material-icons">menu</i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+            </ul>
+        <span class="logout-btn">Logout</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="" class="rounded-circle">
+                <div class="content-header">
+                    <div class="name">Naomi Bishop</div>
+                    <div class="time rounded-pill">3h ago</div>
+                    <button type="button" class="btn btn-light">
+                        <i class="material-icons">more_horiz</i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit deserunt veniam quibusdam eligendi itaque magni, nihil modi hic nobis sunt minima tempore tempora sit, alias rem pariatur labore totam.</p>
+                <div class="likes">
+                    <div class="like"><img src="./assets/svg/like.svg" alt=""></div>
+                    <div class="core"><img src="./assets/svg/core.svg" alt=""></div>
+                    <div class="mad"><img src="./assets/svg/mad.svg" alt=""></div>
+                    <label>7 - 13 comments</label>
+                </div>
+            </div>
+            <div class="card-footer"> 
+                <button class="btn btn-light like"><i class="material-icons-outlined">thumb_up</i>Like</button>
+                <button class="btn btn-light comment"><i class="material-icons-outlined">mode_comment</i>Comment</button>
+                <button class="btn btn-light share"><i class="material-icons-outlined">reply</i>Share</button>
+            </div>
+        </div>    
+        <div class="card">
+            <div class="card-header">
+                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="" class="rounded-circle">
+                <div class="content-header">
+                    <div class="name">Jimmy Carroll</div>
+                    <div class="time rounded-pill">4h ago</div>
+                    <button type="button" class="btn btn-light">
+                        <i class="material-icons">more_horiz</i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, ipsa reiciendis. A molestias at asperiores quibusdam, ratione earum facere nihil. Doloremque et non doloribus libero numquam ad aliquid quos distinctio.</p>
+                <div class="likes">
+                    <div class="like"><img src="./assets/svg/like.svg" alt=""></div>
+                    <div class="core"><img src="./assets/svg/core.svg" alt=""></div>
+                    <div class="mad"><img src="./assets/svg/mad.svg" alt=""></div>
+                    <label>15 - 21 comments</label>
+                </div>
+            </div>
+            <div class="card-footer"> 
+                <button class="btn btn-light like"><i class="material-icons-outlined">thumb_up</i>Like</button>
+                <button class="btn btn-light comment"><i class="material-icons-outlined">mode_comment</i>Comment</button>
+                <button class="btn btn-light share"><i class="material-icons-outlined">reply</i>Share</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="" class="rounded-circle">
+                <div class="content-header">
+                    <div class="name">Allison Griffin</div>
+                    <div class="time rounded-pill">5h ago</div>
+                    <button type="button" class="btn btn-light">
+                        <i class="material-icons">more_horiz</i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure, aspernatur accusamus, veritatis repellat cupiditate deleniti maxime culpa facilis obcaecati, cum provident hic placeat necessitatibus nulla vitae harum aliquam. Praesentium.</p>
+                <div class="likes">
+                    <div class="like"><img src="./assets/svg/like.svg" alt=""></div>
+                    <div class="core"><img src="./assets/svg/core.svg" alt=""></div>
+                    <div class="mad"><img src="./assets/svg/mad.svg" alt=""></div>
+                    <label>25 - 18 comments</label>
+                </div>
+            </div>
+            <div class="card-footer"> 
+                <button class="btn btn-light like"><i class="material-icons-outlined">thumb_up</i>Like</button>
+                <button class="btn btn-light comment"><i class="material-icons-outlined">mode_comment</i>Comment</button>
+                <button class="btn btn-light share"><i class="material-icons-outlined">reply</i>Share</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
