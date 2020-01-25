@@ -155,3 +155,10 @@ footer {
         padding: 10px 10px;
     }
 }
+@media screen and (max-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+}
