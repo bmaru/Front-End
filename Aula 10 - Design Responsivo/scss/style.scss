@@ -1,0 +1,113 @@
+html, body {
+    font-family: 'Arimo', sans-serif;
+    background-color: #EEE6C7;
+    color: black;
+}
+.navbar-brand {
+    padding: 30px 0px 30px 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: 0px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s; 
+    -ms-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+    animation: fadein 2s;
+    img {
+        height: 270px;
+        width: 270px;
+    }
+}
+#navbar-search {
+    padding: 30px 0px 30px 30px;
+    border: 0px;
+    margin-right: -15px;
+    margin-top: -40px;
+    .material-icons {
+        font-size: 60px;
+    }
+}
+#navbar-menu {
+    padding: 30px 30px 30px 15px;
+    border: 0px;
+    margin-right: -15px;
+    margin-top: -40px;
+    .material-icons {
+        font-size: 60px;
+    }
+}
+.navbar-text {
+    padding: 0px 15px 0px 15px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#navbarNav {
+    padding: 60px 30px;
+    margin-top: -220px;
+}
+.nav-link {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    padding: 60px 30px 45px;
+    h1 {
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h2 {
+        font-family: 'Lulo Clean Outline Bold', 'Arimo';
+        font-size: 130px;
+        margin-bottom: 0px;
+        -webkit-animation: fadein 2s;
+        -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+        -o-animation: fadein 2s; 
+        animation: fadein 2s;
+    }
+    p {
+        font-size: 25px;
+        margin-left: 45px;
+        margin-bottom: 16px;
+    }
+}
+#button {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+    height: 60px;
+    min-width: 300px;
+    border: 2px solid #000;
+    border-radius: 0px;
+    margin-bottom: 60px;
+}
+@font-face {
+    font-family: 'Lulo Clean Outline Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lulo Clean Outline Bold'), url('/Yellow\ Design\ Studio\ -\ Lulo\ Clean\ Outline\ Bold.woff') format('woff');
+}
+@media screen and (max-width: 900px) {
+    .navbar-brand {
+        img {
+            height: 104px;
+            width: 104px;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .searchBar {
+        display: none;
+    }
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
