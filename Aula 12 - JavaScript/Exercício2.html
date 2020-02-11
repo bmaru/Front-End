@@ -1,0 +1,50 @@
+<!-- 2. Desenvolver lista de tarefas.
+a) Adicionar um campo para o usuário informar a descrição da tarefa.
+b) Adicionar registros em uma lista em memória.
+c) Exibir lista de tarefas.
+d) Utilizar arrays.
+e) Utilizar loops;
+f) Adicionar um botão para remover ao lado de cada tarefa. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5 ml-5 mr-5">
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <label class="sr-only">Minhas Tarefas</label>
+                <input type="text" readonly class="form-control-plaintext" value="Minhas Tarefas">
+            </div>
+            <div class="form-group mx-md-3 mb-2">
+                <label class="sr-only">Tarefa</label>
+                <input type="text" id="input" class="form-control" id="novaTarefa" placeholder="Nova tarefa">
+            </div>
+            <span onclick="novoItem()" class="addBtn btn btn-outline-secondary mb-2">Adicionar</span>
+        </form>
+    </div>
+    <ul class="lista ml-5" id="minhaLista"></ul>
+    <button type="button" onclick="removerItem(event)" class="btn btn-secondary">Remover</button>
+    <script>
+        function novoItem() {
+            var item = document.getElementById('input').value;
+            var ul = document.getElementById('minhaLista');
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(item));
+            ul.appendChild(li);
+            document.getElementById("input").value = "";
+            li.onclick = removerItem;
+        }
+        function removerItem(e) {
+            e.target.parentElement.removeChild(e.target);
+        }
+    </script>
+</body>
+</html>

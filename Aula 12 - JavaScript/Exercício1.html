@@ -1,0 +1,67 @@
+<!-- 1. Desenvolver uma calculadora de Indíce de Massa Corporal (IMC)
+a) Adicionar campos para o usuário informar peso e altura.
+b) Calcular o IMC e exibir ao usuário.
+c) Exibir uma frase motivacional ou com dicas para melhorar.
+d) Utilizar template string.
+e) Utilizar eventos. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid mt-5 ml-5 mr-5">
+        <form action="#">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Peso</label>
+                <input id="peso" type="number" class="form-control" id="exampleFormControlInput1" placeholder="kg">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Altura</label>
+                <input id="altura" type="number" class="form-control" id="exampleFormControlInput1" placeholder="m">
+            </div>
+            <div>
+                <button class="btn btn-primary" type="button" onclick="calc(event); return false;">Calcular</button>
+            </div>
+        </form>
+        <br>
+        <div class='alert' id="mensagem" role="alert"></div>
+    </div>
+    <script>
+        function calc(e) {
+            e.preventDefault();
+            let peso = parseFloat(document.getElementById('peso').value)
+            let altura = parseFloat(document.getElementById('altura').value)
+            let result = peso / Math.pow(altura,2);
+            if ( result <= 16.9 ) {
+                document.getElementById('mensagem').classList.add('alert-danger');
+                document.getElementById('mensagem').innerText = 'Seu IMC é de: ' + result + ' Muito abaixo do peso. Quando se está abaixo do peso ideal deve-se aumentar o consumo de alimentos ricos em nutrientes para que o corpo tenha o necessário para se proteger de doenças.';
+            } else if (result >= 17 && result <= 18.4) {
+                document.getElementById('mensagem').classList.add('alert-warning');
+                document.getElementById('mensagem').innerText = 'Seu IMC é de: ' + result + ' Abaixo do peso. Quando se está abaixo do peso ideal deve-se aumentar o consumo de alimentos ricos em nutrientes para que o corpo tenha o necessário para se proteger de doenças.';
+            } else if (result >= 18.5 && result <=24.9) {
+                document.getElementById('mensagem').classList.add('alert-success');
+                document.getElementById('mensagem').innerText = 'Seu IMC é de: ' + result + ' Peso normal';
+            } else if (result >= 25 && result <=29.9) {
+                document.getElementById('mensagem').classList.add('alert-warning');
+                document.getElementById('mensagem').innerText = 'Seu IMC é de: ' + result + ' Acima do peso. Quando se está acima do peso ideal deve consumir menos calorias e fazer algum tipo de atividade física para eliminar os estoques de gordura, que aumenta o risco de doenças cardíacas.';
+            } else if (result >= 30 && result <=34.9) {
+                document.getElementById('mensagem').classList.add('alert-danger');
+                document.getElementById('mensagem').innerText = 'Seu IMC é de: ' + result + ' Obesidade Grau I. Quando se está acima do peso ideal deve consumir menos calorias e fazer algum tipo de atividade física para eliminar os estoques de gordura, que aumenta o risco de doenças cardíacas.';
+            } else if (result >= 35 && result <=40) {
+                document.getElementById('mensagem').classList.add('alert-danger');
+                document.getElementById('mensagem').innerText = 'Seu IMC é de: ' + result + ' Obesidade Grau II. Quando se está acima do peso ideal deve consumir menos calorias e fazer algum tipo de atividade física para eliminar os estoques de gordura, que aumenta o risco de doenças cardíacas.';
+            } else if (result >= 40) {
+                document.getElementById('mensagem').classList.add('alert-danger');
+                document.getElementById('mensagem').innerText = 'Seu IMC é de: ' + result + ' Obesidade Grau III. Quando se está acima do peso ideal deve consumir menos calorias e fazer algum tipo de atividade física para eliminar os estoques de gordura, que aumenta o risco de doenças cardíacas.';
+            }
+        }
+    </script>
+</body>
+</html>
