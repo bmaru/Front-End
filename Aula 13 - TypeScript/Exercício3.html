@@ -1,0 +1,22 @@
+<!--3. Criar uma classe chamada Conta com os seguintes atributos: agência e conta corrente, crie outras duas classes, 
+que irão estender a classe Conta, uma delas vai se chamar PessoaFisica e outra PessoaJuridica. 
+A classe PessoaJuridica terá os seguintes atributos: Nome da Empresa, CNPJ, 
+Já a classe PessoaFisica terá os seguintes atributos: Nome do Cliente e CPF. 
+As duas classes precisarão ter um método para exibir os seus dados respectivos.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <script src="Conta.js"></script>
+</head>
+<body>
+    <script>
+        c = new PessoaFisica(5190, 30987, "Bianca Russo", 4870980993);
+        c.exibirDados();
+        c = new PessoaJuridica(5190, 30987, "Bianca Russo", 4870980993);
+        c.exibirDados();
+    </script>
+</body>
+</html>

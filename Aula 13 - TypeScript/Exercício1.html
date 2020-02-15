@@ -9,19 +9,11 @@
 </head>
 <body>
     <script>
-        c = new Carro();
-        c.fabricante = "Hyundai";
-        c.modelo = "HB20";
-        c.cor = "Azul";
-        c.ano = "2019";
-        c.tetoSolar = "true";
+        c = new Carro("Nissan", "March", "Preto", 2013, true);
         c.exibirDados();
-        c = new Carro();
-        c.fabricante = "Ford";
-        c.modelo = "Ka";
-        c.cor = "Cinza";
-        c.ano = "2019";
-        c.tetoSolar = "false";
+        c = new Carro("Hyundai", "HB20", "Azul", 2019, true);
+        c.exibirDados();
+        c = new Carro("Ford", "Ka", "Cinza", 2019, false);
         c.exibirDados();
     </script>
 </body>

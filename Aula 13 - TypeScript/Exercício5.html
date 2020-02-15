@@ -1,0 +1,23 @@
+<!--Nosso último exercício terá a seguinte estrutura. Criar uma interface com os atributos: nome, idade, cidade, e-mail e telefone, 
+essa interface pode se chamar Padrao.
+Crie outras duas classes, uma chamada Professor e outra chamada Aluno, o professor terá o atributo matéria e a classe aluno terá os atributos: 
+nota1 e nota2.
+Agora implemente na classe Padrao um método chamado listar, onde serão exibidos os dados de Aluno e Professor.
+Crie uma página HTML e instancie dois objetos, um da classe Professor e outro da classe Aluno, executo o método de listar de cada um deles.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <script src="Padrao.js"></script>
+</head>
+<body>
+    <script>
+        c = new Professor("Carlos", 35, "Florianópolis", "carlos@gmail.com", 33558891, "Geografia");
+        c.listar();
+        c = new Aluno("Bianca", 21, "Florianópolis", "bianca@gmail.com", 3489700, 10, 10);
+        c.listar();
+    </script>
+</body>
+</html>

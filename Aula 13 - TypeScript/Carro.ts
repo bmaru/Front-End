@@ -1,17 +1,13 @@
 class Carro {
-    fabricante: string;
-    modelo: string;
-    cor: string;
-    ano: number;
-    tetoSolar: boolean;
-
-    exibirDados() {
-        let mensagem = "Os dados do veículo são:";
-        mensagem += "\nFabricante: " + this.fabricante;
-        mensagem += "\nModelo: " + this.modelo;
-        mensagem += "\nCor: " + this.cor;
-        mensagem += "\nAno: " + this.ano;
-        mensagem += "\nTeto Solar: " + this.tetoSolar;
-        alert(mensagem);
+    constructor(private fabricante: string, private modelo: string, private cor: string, private ano: number, private tetoSolar: boolean) {
+    }
+    private exibirDados():void {
+        const mensagem = `Os dados do veículo são:
+        \nFabricante: ${this.fabricante}
+        \nModelo: ${this.modelo}
+        \nCor: ${this.cor}
+        \nAno: ${this.ano}
+        \nTeto Solar: ${this.tetoSolar}`
+        console.log(mensagem);
     }
 }
