@@ -31,19 +31,22 @@ f) Adicionar um botão para remover ao lado de cada tarefa. -->
         </form>
     </div>
     <ul class="lista ml-5" id="minhaLista"></ul>
-    <button type="button" onclick="removerItem(event)" class="btn btn-secondary">Remover</button>
     <script>
         function novoItem() {
             var item = document.getElementById('input').value;
             var ul = document.getElementById('minhaLista');
             var li = document.createElement("li");
+            var button = document.createElement("button");
+            button.setAttribute('class', 'btn btn-secondary ml-2');
+            button.textContent = "Remover";
+            button.onclick = removerItem;
             li.appendChild(document.createTextNode(item));
             ul.appendChild(li);
+            li.appendChild(button);
             document.getElementById("input").value = "";
-            li.onclick = removerItem;
         }
         function removerItem(e) {
-            e.target.parentElement.removeChild(e.target);
+            e.target.parentElement.remove();
         }
     </script>
 </body>
