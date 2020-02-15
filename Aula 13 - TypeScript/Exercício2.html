@@ -1,0 +1,26 @@
+<!-- 2. Crie uma classe chamada pessoa com os seguintes atributos:
+Nome
+Idade
+Cidade
+Crie um método chamado exibirDados(), onde serão exibidos os atributos da classe (nome, idade e cidade).
+Crie também um método chamado verificarIdade(), se a idade for menor de 18 exiba a mensagem menor de idade, caso contrário maior de idade.
+Instancie um objeto da página index.html e chame os dois métodos.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <script src="Pessoa.js"></script>
+</head>
+<body>
+    <script>
+        c = new Pessoa();
+        c.nome = "Bianca";
+        c.idade = "21";
+        c.cidade = "Florianópolis";
+        c.exibirDados();
+        c.verificarIdade();
+    </script>
+</body>
+</html>
