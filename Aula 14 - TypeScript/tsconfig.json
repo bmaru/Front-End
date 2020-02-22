@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "amd",
+        "rootDir": "src",
+        "outDir": "public/js",
+        "sourceMap": true,
+        "inlineSources": true
+    },
+    "files":[
+        "src/exemplo.ts",
+        "src/funcionario.ts",
+        "src/controle.ts",
+        "src/gerente.ts",
+        "src/presidente.ts",
+    ]
+}

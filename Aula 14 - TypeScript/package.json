@@ -1,0 +1,19 @@
+{
+  "name": "aula14typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "./node_modules/.bin/tsc -w",
+    "server": "./node_modules/.bin/live-server ./public",
+    "dev": "./node_modules/.bin/concurrently \"npm run tsc\" \"npm run server\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/es6-promise": "0.0.33",
+    "concurrently": "^3.6.1",
+    "live-server": "^1.2.1",
+    "typescript": "^2.9.2"
+  }
+}
