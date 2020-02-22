@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "amd",
+        "rootDir": "src",
+        "outDir": "public/js",
+        "sourceMap": true,
+        "inlineSources": true
+    },
+    "files":[
+        "src/exemplo.ts",
+        "src/conta.ts",
+        "src/conta-corrente.ts",
+        "src/conta-poupanca.ts"
+    ]
+}

@@ -1,0 +1,13 @@
+import Conta from "./conta";
+import ContaCorrente from "./conta-corrente";
+import ContaPoupanca from "./conta-poupanca";
+import Tributavel from "./tributavel";
+let cc: ContaCorrente = new ContaCorrente();
+let cp: Conta = new ContaPoupanca();
+cc.deposita(100);
+cp.deposita(100);
+let tri: Tributavel = cc;
+let triCP: Tributavel = new ContaCorrente();
+console.log("Conta Corrente - saldo: " + cc.getSaldo());
+console.log("Conta Poupança - saldo: " + cp.getSaldo());
+console.log("Conta Corrente - tributos: " + tri.calculaTributo());
