@@ -1,0 +1,38 @@
+<h3 [ngClass]="fonte ? 'vermelho' : 'azul'">{{titulo}}</h3>
+<p [ngClass]="'azul'">{{texto}} {{campo}}</p>
+<p>Estou gostando de Angular: <b *ngIf="gostandoDeAngular">Sim</b> <b *ngIf="!gostandoDeAngular">Não</b></p>
+<p>Minha cor preferida é: {{cor}} 
+    <ng-component [ngSwitch]="cor">
+        <p *ngSwitchCase="'vermelho'">Vermelho</p>
+        <p *ngSwitchCase="'verde'">Verde</p>
+        <p *ngSwitchCase="'azul'">Azul</p>
+    </ng-component>
+</p>
+<div>Meu número preferido é: 
+    <div [ngSwitch]="numero">
+        <p *ngSwitchCase="1">Um</p>
+        <p *ngSwitchCase="2">Dois</p>
+        <p *ngSwitchCase="3">Três</p>
+        <p *ngSwitchCase="4">Quatro</p>
+        <p *ngSwitchCase="5">Cinco</p>
+        <p *ngSwitchCase="6">Seis</p>
+        <p *ngSwitchCase="7">Sete</p>
+        <p *ngSwitchCase="8">Oito</p>
+        <p *ngSwitchCase="9">Nove</p>
+    </div>
+</div>
+<select (change)="alterarNumero($event)">
+    <option *ngFor="let n of numeros" [value]="n" [selected]="numero == n">{{n}}</option>
+</select>
+<ul *ngFor="let c of cidades">
+    <li>{{c}}</li>
+</ul>
+<input type="text" [(ngModel)]="campo">
+<button (click)="avisar()">Clique Aqui</button>
+<br>
+<a href="{{url}}">Acessar a página</a>
+<br>
+<br>
+<img src="{{imagem}}" alt="Biding de chave dupla">
+<img [src]="imagem" alt="Biding de colchetes">
+<img bind-src="imagem" alt="Imagem de ondas no mar">
