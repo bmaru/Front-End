@@ -14,4 +14,16 @@ export class PostsService {
   public listar(): Observable<Post[]> {
     return this.http.get<Post[]>(this.url);
   }
+
+  public adicionar(post: Post): Observable<Post> {
+    return this.http.post<Post>(this.url, post);
+  }
+
+  public atualizar(post: Post): Observable<Post> {
+    return this.http.put<Post>(`${this.url}/${post.id}`, post);
+  }
+
+  public remover(post: Post): Observable<Post> {
+    return this.http.delete<Post>(`${this.url}/${post.id}`);
+  }
 }
