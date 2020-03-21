@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { registerLocaleData } from '@angular/common';
 import pt from '@angular/common/locales/pt';
+import { ExponencialPipe } from './pipe/exponencial.pipe';
+import { MoedaPipe } from './pipe/moeda.pipe';
 
 registerLocaleData(pt)
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    ExponencialPipe,
+    MoedaPipe
   ],
   imports: [
     BrowserModule,
