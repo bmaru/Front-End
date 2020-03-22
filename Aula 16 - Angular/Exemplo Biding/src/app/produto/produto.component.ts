@@ -27,7 +27,7 @@ export class ProdutoComponent implements OnInit {
   }
 
   alterarNumero(e): void {
-    //this.numero = e.target.value;
+    this.numero = event.target.value;
   }
 
   avisar(): void {

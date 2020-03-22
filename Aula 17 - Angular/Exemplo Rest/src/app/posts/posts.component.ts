@@ -17,30 +17,8 @@ export class PostsComponent implements OnInit {
     this.postsService.listar().subscribe(res => this.posts = res);
   }
 
-  public adicionar() {
-    this.postsService.adicionar(this.postagem).subscribe(
-      res => {
-        this.posts.push(res)
-        this.editar({userId: null, id: null, title:'', body: ''});
-      }
-    );
-  }
-
   public editar(post: Post) {
     this.postagem = post;
-  }
-
-  public atualizar() {
-    this.postsService.atualizar(this.postagem).subscribe(
-      res => {
-        let postEditado = this.posts.find((p: Post) => p.id == this.postagem['id'])
-        if(postEditado) {
-          Object.assign(postEditado, res);
-        } else {
-          this.posts.push(res);
-        }
-      }
-    );
   }
 
   public remover(post: Post) {

@@ -2,37 +2,15 @@
     <div class="row">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Informações de Postagem</div>
-                <div class="card-body">
-                    <form>
-                        <input type="hidden" name="id" [(ngModel)]="postagem.id" class="form-control" placeholder="Id">
-                        <div class="form-group"> 
-                            <input type="text" name="userId" [(ngModel)]="postagem.userId" class="form-control" placeholder="Id Usuário">
-                        </div>  
-                        <div class="form-group">
-                            <input type="text" name="title" [(ngModel)]="postagem.title" class="form-control" placeholder="Título">
-                        </div>   
-                        <div class="form-group">
-                            <input type="text" name="body" [(ngModel)]="postagem.body" class="form-control" placeholder="Texto">
-                        </div>    
-                        <button *ngIf="postagem!.id == null" (click)="adicionar()" type="button" class="btn btn-primary">Adicionar</button>  
-                        <button *ngIf="postagem.id" (click)="atualizar()" type="button" class="btn btn-primary">Atualizar</button>
-                    </form>
-                </div> 
-            </div>
-        </div>
-    </div>
-</div> 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">Lista de Postagem</div>
+                <div class="card-header">
+                    Lista de Postagem
+                    <a [routerLink]="['/posts/new']" class="btn btn-outline-primary">Novo</a>
+                </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Id Usuário</th>
+                                <th>Usuário</th>
                                 <th>Id</th>
                                 <th>Título</th>
                                 <th>Postagem</th>
@@ -47,8 +25,7 @@
                                 <td>{{p.title}}</td>
                                 <td>{{p.body}}</td>
                                 <td>
-                                    <button (click)="editar(p)" type="button" class="btn btn-outline-primary">Alterar</button>            
-                                </td>
+                                    <a [routerLink]="['/posts', p.id]" class="btn btn-outline-primary">Alterar</a>
                                 <td>
                                     <button (click)="remover(p)" type="button" class="btn btn-danger">Excluir</button>            
                                 </td>

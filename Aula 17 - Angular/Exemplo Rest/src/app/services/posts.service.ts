@@ -15,6 +15,11 @@ export class PostsService {
     return this.http.get<Post[]>(this.url);
   }
 
+  public buscarPorId(id: number): Observable<Post> {
+    return this.http.get<Post>(`${this.url}/${id}`);
+  }
+
+
   public adicionar(post: Post): Observable<Post> {
     return this.http.post<Post>(this.url, post);
   }
