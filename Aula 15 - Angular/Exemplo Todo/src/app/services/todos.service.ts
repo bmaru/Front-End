@@ -15,15 +15,19 @@ export class TodosService {
     return this.http.get<Todo[]>(this.url);
   }
 
+  public buscarPorId(id: number): Observable<Todo> {
+    return this.http.get<Todo>(`${this.url}/${id}`);
+  }
+
   public adicionar(tarefa: Todo): Observable<Todo> {
     return this.http.post<Todo>(this.url, tarefa);
   }
 
   public atualizar(tarefa: Todo): Observable<Todo> {
-    return this.http.put<Todo>(`${this.url}/${tarefa._id}`, tarefa);
+    return this.http.put<Todo>(`${this.url}/${tarefa.id}`, tarefa);
   }
 
   public remover(tarefa: Todo): Observable<Todo> {
-    return this.http.delete<Todo>(`${this.url}/${tarefa._id}`);
+    return this.http.delete<Todo>(`${this.url}/${tarefa.id}`);
   }
 }
