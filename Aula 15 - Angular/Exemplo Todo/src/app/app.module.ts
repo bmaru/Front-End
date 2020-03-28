@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { TodoComponent } from './todo/todo.component';
-import { TodosComponent } from './todo/todos/todos.component';
+import { TodosComponent } from './todos/todos.component';
+import { TodoComponent } from './todos/todo/todo.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent,
-    TodosComponent
+    TodosComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

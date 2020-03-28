@@ -24,10 +24,10 @@ export class TodosService {
   }
 
   public atualizar(tarefa: Todo): Observable<Todo> {
-    return this.http.put<Todo>(`${this.url}/${tarefa.id}`, tarefa);
+    return this.http.put<Todo>(`${this.url}/${tarefa._id}`, tarefa);
   }
 
   public remover(tarefa: Todo): Observable<Todo> {
-    return this.http.delete<Todo>(`${this.url}/${tarefa.id}`);
+    return this.http.delete<Todo>(`${this.url}/${tarefa._id}`);
   }
 }

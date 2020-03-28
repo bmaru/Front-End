@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-header">
                     Lista de Postagem
-                    <a [routerLink]="['/todo/new']" class="btn btn-outline-primary">Novo</a>
+                    <a [routerLink]="['/todos/new']" class="btn btn-outline-primary">Novo</a>
                 </div>
                 <div class="card-body">
                     <table class="table">
@@ -19,7 +19,7 @@
                             <tr *ngFor="let t of tarefas">
                                 <td [ngClass]="t.done ? 'azul' : 'vermelho'">{{t.description}}</td>
                                 <td>
-                                    <a [routerLink]="['/todo', t.id]" class="btn btn-outline-primary">Alterar</a>
+                                    <a [routerLink]="['/todos', t._id]" class="btn btn-outline-primary">Alterar</a>
                                 </td>
                                 <td>
                                     <button (click)="remover(t)" type="button" class="btn btn-danger">Excluir</button>            

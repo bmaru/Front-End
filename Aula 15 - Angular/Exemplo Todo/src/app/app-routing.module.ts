@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TodoComponent } from './todo/todo.component';
-import { TodosComponent } from './todo/todos/todos.component';
+import { TodosComponent } from './todos/todos.component';
+import { TodoComponent } from './todos/todo/todo.component';
 
 
 const routes: Routes = [
-  { path: 'todo/new', component: TodosComponent },
-  { path: 'todo/:id', component: TodoComponent },
-  { path: 'todo', component: TodoComponent}
+  { path: 'todos/new', component: TodoComponent },
+  { path: 'todos/:id', component: TodoComponent },
+  { path: 'todos', component: TodosComponent}
 ];
 
 @NgModule({

@@ -4,11 +4,11 @@ import { TodosService } from '../services/todos.service';
 import { Todo } from '../models/todo';
 
 @Component({
-  selector: 'app-todo',
-  templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.css']
+  selector: 'app-todos',
+  templateUrl: './todos.component.html',
+  styleUrls: ['./todos.component.css']
 })
-export class TodoComponent implements OnInit {
+export class TodosComponent implements OnInit {
   public tarefas: Todo[];
   public task: any= {};
 

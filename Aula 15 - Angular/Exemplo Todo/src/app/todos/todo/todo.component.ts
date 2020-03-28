@@ -4,18 +4,22 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-todos',
-  templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.css']
+  selector: 'app-todo',
+  templateUrl: './todo.component.html',
+  styleUrls: ['./todo.component.css']
 })
-export class TodosComponent implements OnInit {
-  task: any = {};
+export class TodoComponent implements OnInit {
+  task: FormGroup;
 
   constructor(private todosService: TodosService, private activedRoute: ActivatedRoute, private router: Router) {
     this.novoFormTarefa();
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+    const id = this.activedRoute.snapshot.params['id'];
+    if(id) {
+      this.todosService.buscarPorId(id).subscribe(resp => this.task.patchValue(resp));
+    }
   }
 
   private novoFormTarefa(){
@@ -27,13 +31,11 @@ export class TodosComponent implements OnInit {
   }
 
   public adicionar() {
-    this.todosService.adicionar(this.task.value).subscribe();
-    this.router.navigate(['/todo']);
+    this.todosService.adicionar(this.task.value).subscribe(resp => this.router.navigate(['/todos']));
   }
 
   public atualizar() {
-    this.todosService.atualizar(this.task.value).subscribe();
-    this.router.navigate(['/todo']);
+    this.todosService.atualizar(this.task.value).subscribe(resp => this.router.navigate(['/todos']));
   }
 
 }
