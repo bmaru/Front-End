@@ -1,0 +1,17 @@
+<div class="container-fluid mt-5 ml-5 mr-5">
+    <form>
+        <div class="form-group">
+            <label for="peso">Peso</label>
+            <input type="number" [(ngModel)]="individuo.peso" name="peso" class="form-control" placeholder="kg">
+        </div>
+        <div class="form-group">
+            <label for="altura">Altura</label>
+            <input type="number" [(ngModel)]="individuo.altura" name="altura" class="form-control" placeholder="m">
+        </div>
+        <div>
+            <button class="btn btn-primary" type="button" (click)="calcularIMC()">Calcular</button>
+        </div>
+    </form>
+    <br>
+    <div [ngClass]="['alert', alert]" role="alert">{{mensagem}}</div>
+</div>
