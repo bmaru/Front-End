@@ -1,0 +1,6 @@
+<div class="dropdown-menu" aria-labelledby="navbarBreed">
+    <ng-container *ngFor="let f of collections">
+        <a class="dropdown-item" [routerLink]="['racas', f]">{{f | titlecase}}</a>
+    </ng-container>
+</div>
+

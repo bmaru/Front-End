@@ -1,0 +1,8 @@
+<h1>{{raca | titlecase}}</h1>
+<div class="card-columns" id="row">
+    <div class="col" *ngFor="let foto of fotos">
+        <div class="card border-light rounded-0" id="card">
+            <img class="card-img rounded-0" [src]="foto" alt="Fotos">
+        </div>
+    </div>
+</div>
